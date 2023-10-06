@@ -34,6 +34,8 @@ Após configurar a string de conexão, abra a interface de linha de comando do g
 
 **Comando para executar as migrações:**
 
+mathematica
+Copy code
 Update-Database
 
 
