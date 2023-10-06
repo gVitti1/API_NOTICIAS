@@ -27,25 +27,23 @@ No arquivo `Program.cs`, você encontrará um local marcado para inserir a strin
 
 Após configurar a string de conexão, abra a interface de linha de comando do gerenciador de pacotes NuGet e execute as migrações com o seguinte comando:
 
-```bash
 Update-Database
 
-```markdown
-## Pacotes Utilizados e Suas Versões
+Pacotes Utilizados e Suas Versões
 
-### Autenticação por JWT
+Autenticação por JWT
 
 - Microsoft.AspNetCore.Authentication.JwtBearer (versão 7.0.11)
 - System.IdentityModel.Tokens.Jwt (versão 7.0.2)
 - Microsoft.IdentityModel.Tokens (versão 7.0.2)
 
-### Banco de Dados
+Banco de Dados
 
 - Microsoft.EntityFrameworkCore (versão 7.0.11)
 - Microsoft.EntityFrameworkCore.Tools (versão 7.0.11)
 - Npgsql.EntityFrameworkCore.PostgreSQL (versão 7.0.11)
 
-### Documentação da API (Swagger/OpenAPI)
+Documentação da API (Swagger/OpenAPI)
 
 - Microsoft.AspNetCore.OpenApi (versão 7.0.9)
 - Swashbuckle.AspNetCore (versão 6.5.0)
