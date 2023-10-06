@@ -1,42 +1,61 @@
-# API_NOTICIAS
-API de Notícias
-Este é um projeto de API Web ASP.NET Core para uma aplicação de notícias, criado como parte de um desafio técnico. A API oferece funcionalidades de autenticação, CRUD de notícias, comentários em notícias, pesquisa e diferentes tipos de autorização (usuário e administrador).
+# API de Gestão Bancária
 
-Tecnologias Utilizadas
-ASP.NET Core
-Entity Framework
-PostgreSQL
-Swagger
-Instruções para Conexão com o Banco de Dados
-1. Instalação dos Pacotes Necessários
-Certifique-se de que você tenha os seguintes pacotes instalados:
+Desafio técnico da criação de uma API Web do ASP.NET CORE
 
-Microsoft.EntityFrameworkCore (versão 7.0.11)
-Microsoft.EntityFrameworkCore.Tools (versão 7.0.11)
-Npgsql.EntityFrameworkCore.PostgreSQL (versão 7.0.11)
-2. Configurar a String de Conexão
-No arquivo Program.cs, você encontrará um local marcado para inserir a string de conexão com o banco de dados. Certifique-se de configurá-lo corretamente.
+**Tecnologias utilizadas:**
+- ASP.NET CORE
+- ENTITY FRAMEWORK
+- POSTGRESQL
+- SWAGGER
 
-3. Executar as Migrações
-Após configurar a string de conexão, abra a interface de linha de comando do gerenciador de pacotes NuGet e execute as migrações com o seguinte comando:
+**Funcionalidades:**
+- Cadastro de Usuario
+- Login
+- Depositar valor
+- Consultar extrato
+- Transferir valor entre contas
 
-mathematica
-Copy code
+## Instruções para Conexão com Banco de Dados
+
+### 1 - Instalação dos Pacotes Necessários:
+
+**Pacotes necessários:**
+- Microsoft.EntityFrameworkCore (versão utilizada na época da implementação: 7.0.11)
+- Microsoft.EntityFrameworkCore.Tools (versão utilizada na época da implementação: 7.0.11)
+- Npgsql.EntityFrameworkCore.PostgreSQL (versão utilizada na época da implementação: 7.0.4)
+
+### 2 - Configurar a String de Conexão:
+
+Realize a configuração de sua string de conexão com o banco de dados presente no arquivo 'Program.cs', há um comentário sinalizando o local correto da inserção da string de conexão.
+
+### 3 - Executar as Migrações:
+
+Após configurar a string de conexão, abra a interface de linha de comando do gerenciador de pacotes NuGet e execute as migrações.
+
+**Comando para executar as migrações:**
+
 Update-Database
-Isso aplicará as migrações pendentes ao banco de dados, criando ou atualizando-o de acordo com o estado definido pelas migrações.
 
-Após concluir essas etapas, execute o programa e ele deverá funcionar como esperado.
 
-Pacotes Utilizados e Suas Versões
-Autenticação por JWT
-Microsoft.AspNetCore.Authentication.JwtBearer (versão 7.0.11)
-System.IdentityModel.Tokens.Jwt (versão 7.0.2)
-Microsoft.IdentityModel.Tokens (versão 7.0.2)
-Banco de Dados
-Microsoft.EntityFrameworkCore (versão 7.0.11)
-Microsoft.EntityFrameworkCore.Tools (versão 7.0.11)
-Npgsql.EntityFrameworkCore.PostgreSQL (versão 7.0.11)
-Documentação da API (Swagger/OpenAPI)
-Microsoft.AspNetCore.OpenApi (versão 7.0.9)
-Swashbuckle.AspNetCore (versão 6.5.0)
-Este projeto utiliza uma combinação de tecnologias poderosas para oferecer funcionalidades avançadas de notícias. Sinta-se à vontade para explorar a API e contribuir para o seu desenvolvimento.
+Este comando aplicará as migrações pendentes ao banco de dados, criando ou atualizando-o de acordo com o estado definido pelas migrações.
+
+Após isso, execute o programa, ele deverá funcionar como o esperado.
+
+## Pacotes Utilizados e Suas Respectivas Versões
+
+### Referentes a Autenticação por JWT:
+
+- Microsoft.AspNetCore.Authentication.JwtBearer (7.0.11)
+- System.IdentityModel.Tokens.Jwt (7.0.0)
+- Microsoft.IdentityModel.Tokens (7.0.0)
+
+### Referentes a Banco de Dados:
+
+- Microsoft.EntityFrameworkCore (7.0.11)
+- Microsoft.EntityFrameworkCore.Tools (7.0.11)
+- Npgsql.EntityFrameworkCore.PostgreSQL (7.0.4)
+
+### Referentes a Documentação da API (Swagger/OpenAPI):
+
+- Microsoft.AspNetCore.OpenApi (7.0.9)
+- Swashbuckle.AspNetCore (6.5.0)
