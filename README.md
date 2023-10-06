@@ -34,9 +34,7 @@ Após configurar a string de conexão, abra a interface de linha de comando do g
 
 **Comando para executar as migrações:**
 
-Copy code
 Update-Database
-
 
 Este comando aplicará as migrações pendentes ao banco de dados, criando ou atualizando-o de acordo com o estado definido pelas migrações.
 
