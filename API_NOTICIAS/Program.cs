@@ -21,10 +21,10 @@ builder.Services.AddScoped<RegrasUsuario>();
 builder.Services.AddScoped<RegrasNoticia>();
 
 
-//Essa sentença de código faz a conexao com o banco de dados e aplica injecao de dependencia.
-builder.Services.AddDbContext<NoticiasDbContext>(x => x.UseNpgsql("Server=localhost;Port=5432;Database=NoticiasDB;User Id=postgres;Password=1480;")); //use sua string de conexao como parametro de UseNpgsql.
+//Essa sentenÃ§a de cÃ³digo faz a conexao com o banco de dados e aplica injecao de dependencia.
+builder.Services.AddDbContext<NoticiasDbContext>(x => x.UseNpgsql("")); //use sua string de conexao como parametro de UseNpgsql.
 
-//Configuração para o Swagger ter um campo de inserção do JWT.
+//ConfiguraÃ§Ã£o para o Swagger ter um campo de inserÃ§Ã£o do JWT.
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
